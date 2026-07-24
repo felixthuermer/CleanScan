@@ -1,0 +1,29 @@
+# DocDigitizer core (light) dependencies.
+#
+# Primary OCR is native Apple Vision (Backend/bin/visionocr) — no Python package,
+# no model download. These are for preprocessing, page standardization and
+# rendering. MinerU (heavy structural reconstruction) is OPTIONAL and lives in
+# requirements-mineru.txt (install with ./setup.sh --with-mineru).
+#
+# Requires Python >= 3.10. setup.sh provisions python@3.12 via Homebrew.
+
+# --- rendering (real selectable text) ---
+weasyprint>=61.0
+
+# --- preprocessing / imaging / PDF <-> image ---
+opencv-python>=4.9.0
+pillow>=10.2.0
+pillow-heif>=0.15.0        # HEIC/HEIF input support
+pymupdf>=1.24.0            # fitz: rasterize, dims, faithful overlay, page re-imposition
+numpy>=1.26.0
+
+# --- Clean mode: geometric page de-warping (pure CV, offline; pulls scipy) ---
+page-dewarp>=0.3.4
+
+# --- optional legacy fallback (only used if the native visionocr helper is missing) ---
+pytesseract>=0.3.10
+ocrmypdf>=16.0.0
+
+# --- optional: headless-Chromium render fallback (config.engine = "chromium") ---
+#   pip install playwright && playwright install chromium
+# playwright>=1.44.0

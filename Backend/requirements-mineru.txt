@@ -1,0 +1,18 @@
+# Optional: MinerU — heavy structural reconstruction (tables, figures, complex
+# multi-column layout). Several GB of models on first run.
+#
+# Only needed if you want Auto mode (or the manual Reconstruct mode) to rebuild
+# tables/figures as real structure. Without it, documents with detected structure
+# fall back to a faithful searchable overlay (image preserved + selectable text),
+# and plain-text documents still reconstruct natively.
+#
+# Install with:  ./setup.sh --with-mineru      (or: pip install -r requirements-mineru.txt)
+#
+# The [pipeline] extra pulls in PyTorch + the layout/OCR/table models the
+# 'pipeline' backend needs. The bare `mineru` package does NOT include torch, so
+# the pipeline backend fails with "No module named 'torch'" without this extra.
+mineru[pipeline]>=2.0.0
+
+# Undeclared transitive dep: MinerU's pipeline backend imports `six` at runtime
+# but does not declare it, failing with "No module named 'six'" without this.
+six>=1.16.0
