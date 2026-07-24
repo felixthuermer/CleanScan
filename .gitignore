@@ -11,7 +11,7 @@ Backend/requirements.lock.txt
 
 # Swift / SwiftPM build products
 App/.build/
-App/DocDigitizer.app/
+App/CleanScan.app/
 
 # Generated icon intermediates (AppIcon.icns and icon.png ARE committed)
 Resources/AppIcon.iconset/

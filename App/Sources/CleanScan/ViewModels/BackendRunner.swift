@@ -29,7 +29,7 @@ private struct RawEvent: Decodable {
 final class BackendRunner {
     private var process: Process?
     private var stdoutBuffer = Data()
-    private let ioQueue = DispatchQueue(label: "com.docdigitizer.backend.io")
+    private let ioQueue = DispatchQueue(label: "com.cleanscan.backend.io")
 
     func run(input: URL,
              outputDir: URL,

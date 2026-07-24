@@ -1,4 +1,4 @@
-# DocDigitizer core (light) dependencies.
+# CleanScan core (light) dependencies.
 #
 # Primary OCR is native Apple Vision (Backend/bin/visionocr) — no Python package,
 # no model download. These are for preprocessing, page standardization and

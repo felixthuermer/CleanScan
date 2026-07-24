@@ -1,4 +1,4 @@
-# DocDigitizer
+# CleanScan
 
 Turn messy paper scans — phone photos or scanned PDFs — into clean, **searchable**
 PDFs that look like they were born digital. Real selectable text, structured
@@ -7,7 +7,7 @@ tables, re-embedded figures, and one consistent page size per document.
 **Everything runs locally and fully offline.** No cloud, no accounts, no uploads.
 Built for Apple Silicon Macs.
 
-<img src="Resources/icon.png" width="96" align="right" alt="DocDigitizer icon">
+<img src="Resources/icon.png" width="96" align="right" alt="CleanScan icon">
 
 - 🧠 **Native OCR** (Apple Vision) — fast, on-device, great with German umlauts.
 - 📄 **Layout-preserving reconstruction** — rebuilds the page as crisp digital text
@@ -51,8 +51,8 @@ only used for reflow reconstruction of complex tables.
 
 ```bash
 cd App
-./build-app.sh          # produces DocDigitizer.app (with icon, ad-hoc signed)
-open DocDigitizer.app
+./build-app.sh          # produces CleanScan.app (with icon, ad-hoc signed)
+open CleanScan.app
 ```
 
 > No Xcode needed — this builds with the command-line Swift toolchain. You can
@@ -107,16 +107,16 @@ Each mode has an **ⓘ** in the app explaining exactly what it does and its limi
 
 ---
 
-## Building a distributable app (with icon, on your Mac)
+## Building a distributable app
 
-The `build-app.sh` script already produces a proper `DocDigitizer.app` with the
+The `build-app.sh` script already produces a proper `CleanScan.app` with the
 app icon and an **ad-hoc code signature** — enough to run on **your own Mac**.
 
 ```bash
-cd App && ./build-app.sh          # → App/DocDigitizer.app
+cd App && ./build-app.sh          # → App/CleanScan.app
 ```
 
-- **Install it:** drag `DocDigitizer.app` into `/Applications`.
+- **Install it:** drag `CleanScan.app` into `/Applications`.
 - **First open:** because it's ad-hoc signed, right-click the app → **Open** once
   to get past Gatekeeper (only needed the first time).
 - **Change the icon:** replace `Resources/AppIcon.icns` with your own, then re-run
@@ -163,8 +163,8 @@ reconstruction) / `clean` (scan cleanup) / `parse` (MinerU, optional) →
 ## Project layout
 
 ```
-DocDigitizer/
-  App/          SwiftUI app (Swift Package)   — build-app.sh → DocDigitizer.app
+CleanScan/
+  App/          SwiftUI app (Swift Package)   — build-app.sh → CleanScan.app
   Backend/      Python pipeline + setup.sh + make_test_docs.py
   Resources/    App icon + optional bundled font
 ```
@@ -185,9 +185,9 @@ DocDigitizer/
 
 ## Privacy
 
-DocDigitizer processes everything on-device. After the one-time setup download,
+CleanScan processes everything on-device. After the one-time setup download,
 you can turn Wi-Fi off and it keeps working — nothing is ever uploaded.
 
 ## License
 
-Add your license of choice here before publishing (e.g. MIT).
+MIT

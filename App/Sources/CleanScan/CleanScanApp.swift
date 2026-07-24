@@ -3,7 +3,7 @@ import AppKit
 import UserNotifications
 
 @main
-struct DocDigitizerApp: App {
+struct CleanScanApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @StateObject private var settings: AppSettings
     @StateObject private var queue: QueueViewModel
@@ -16,7 +16,7 @@ struct DocDigitizerApp: App {
     }
 
     var body: some Scene {
-        WindowGroup("DocDigitizer") {
+        WindowGroup("CleanScan") {
             ContentView()
                 .environmentObject(settings)
                 .environmentObject(queue)

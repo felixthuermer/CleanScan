@@ -31,7 +31,7 @@ from .preprocess import PreprocessResult
 _FONTS_DIR = os.path.normpath(
     os.path.join(os.path.dirname(__file__), "..", "..", "Resources", "fonts")
 )
-_FONT_STACK = "'DocDigitizer Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif"
+_FONT_STACK = "'CleanScan Sans', 'Helvetica Neue', Arial, 'DejaVu Sans', sans-serif"
 
 
 def _font_face_css() -> str:
@@ -41,7 +41,7 @@ def _font_face_css() -> str:
     if not faces:
         return ""  # rely on system faces (macOS Helvetica/Arial cover umlauts)
     return "\n".join(
-        f"@font-face {{ font-family: 'DocDigitizer Sans'; "
+        f"@font-face {{ font-family: 'CleanScan Sans'; "
         f"src: url('file://{f}'); }}" for f in faces[:1]
     )
 

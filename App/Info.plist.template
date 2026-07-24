@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>CFBundleName</key>
-    <string>DocDigitizer</string>
+    <string>CleanScan</string>
     <key>CFBundleDisplayName</key>
-    <string>DocDigitizer</string>
+    <string>CleanScan</string>
     <key>CFBundleIdentifier</key>
-    <string>com.docdigitizer.app</string>
+    <string>com.cleanscan.app</string>
     <key>CFBundleExecutable</key>
-    <string>DocDigitizer</string>
+    <string>CleanScan</string>
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundlePackageType</key>
@@ -25,6 +25,6 @@
     <key>LSApplicationCategoryType</key>
     <string>public.app-category.productivity</string>
     <key>NSHumanReadableCopyright</key>
-    <string>DocDigitizer — local, offline document cleanup.</string>
+    <string>CleanScan — local, offline document cleanup.</string>
 </dict>
 </plist>

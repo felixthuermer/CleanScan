@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Resources/AppIcon.icns for DocDigitizer.
+"""Generate Resources/AppIcon.icns for CleanScan.
 
 Run with any Python that has Pillow + NumPy (e.g. the backend venv):
     ../Backend/.venv/bin/python make_icon.py

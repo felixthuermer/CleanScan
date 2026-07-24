@@ -54,7 +54,7 @@ class OCRPage:
 # Helper invocation
 # --------------------------------------------------------------------------
 def helper_path() -> Optional[str]:
-    env = os.environ.get("DOCDIGITIZER_VISIONOCR")
+    env = os.environ.get("CLEANSCAN_VISIONOCR")
     if env and os.path.exists(env):
         return env
     backend = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Backend/

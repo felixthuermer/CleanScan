@@ -67,7 +67,7 @@ struct ContentView: View {
         HStack(spacing: 9) {
             Image(systemName: "doc.text.viewfinder")
                 .font(.title3).foregroundStyle(.tint)
-            Text("DocDigitizer")
+            Text("CleanScan")
                 .font(.title3.weight(.semibold))
             Spacer()
             if queue.isBusy { ProgressView().controlSize(.small) }

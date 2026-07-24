@@ -175,7 +175,7 @@ final class AppSettings: ObservableObject {
     static func defaultOutputDirectory() -> URL {
         let downloads = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
             ?? FileManager.default.homeDirectoryForCurrentUser
-        return downloads.appendingPathComponent("DocDigitizer", isDirectory: true)
+        return downloads.appendingPathComponent("CleanScan", isDirectory: true)
     }
 
     /// Inline JSON passed to the backend via `--config`.

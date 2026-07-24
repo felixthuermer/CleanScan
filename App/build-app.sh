@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Build DocDigitizer.app from the Swift Package (no Xcode required).
+# Build CleanScan.app from the Swift Package (no Xcode required).
 #
 #   ./build-app.sh [debug|release]
 #
@@ -12,7 +12,7 @@
 #
 set -euo pipefail
 cd "$(dirname "$0")"                 # App/
-APP_NAME="DocDigitizer"
+APP_NAME="CleanScan"
 CONFIG="${1:-release}"
 
 echo "==> swift build -c $CONFIG"

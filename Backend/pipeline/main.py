@@ -84,7 +84,7 @@ def process(input_path: str, output_dir: str, cfg: RunConfig) -> str:
         raise FileNotFoundError(input_path)
     os.makedirs(output_dir, exist_ok=True)
 
-    workdir = tempfile.mkdtemp(prefix="docdig_")
+    workdir = tempfile.mkdtemp(prefix="cleanscan_")
     stem = os.path.splitext(os.path.basename(input_path))[0]
     out_pdf = os.path.join(output_dir, f"{stem}_clean.pdf")
     try:
@@ -188,7 +188,7 @@ def process(input_path: str, output_dir: str, cfg: RunConfig) -> str:
 # Argument handling
 # --------------------------------------------------------------------------
 def main(argv: list[str]) -> int:
-    ap = argparse.ArgumentParser(prog="pipeline.main", description="DocDigitizer backend")
+    ap = argparse.ArgumentParser(prog="pipeline.main", description="CleanScan backend")
     ap.add_argument("--input", help="input PDF or image")
     ap.add_argument("--output-dir", help="directory for the output PDF")
     ap.add_argument("--config", default="", help="inline JSON run config")

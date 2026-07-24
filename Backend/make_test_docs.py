@@ -217,7 +217,7 @@ def generate():
 
 
 def main(argv):
-    ap = argparse.ArgumentParser(description="Generate / verify DocDigitizer test docs")
+    ap = argparse.ArgumentParser(description="Generate / verify CleanScan test docs")
     ap.add_argument("--check", metavar="PDF", help="verify a processed output PDF")
     args = ap.parse_args(argv)
     if args.check:

@@ -1,4 +1,4 @@
-// visionocr — native macOS OCR helper for the DocDigitizer backend.
+// visionocr — native macOS OCR helper for the CleanScan backend.
 //
 // Uses Apple's Vision framework (on-device, offline, Neural-Engine accelerated)
 // to recognize text. The Python pipeline calls this per page and gets JSON with

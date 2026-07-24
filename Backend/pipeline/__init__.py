@@ -1,4 +1,4 @@
-"""DocDigitizer backend pipeline.
+"""CleanScan backend pipeline.
 
 Turns a scanned PDF / image document into a clean, searchable PDF. The pipeline
 runs fully offline at runtime and communicates progress to the SwiftUI front-end

@@ -60,7 +60,7 @@ struct AdvancedDisclosure: View {
                         .font(.caption).monospacedDigit()
                         .frame(width: 34)
                 }
-                Text("Below this OCR confidence, DocDigitizer switches to faithful overlay.")
+                Text("Below this OCR confidence, CleanScan switches to faithful overlay.")
                     .font(.caption).foregroundStyle(.secondary)
             }
             .padding(.top, 8)

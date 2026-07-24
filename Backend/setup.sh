@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# DocDigitizer setup (Apple Silicon macOS).
+# CleanScan setup (Apple Silicon macOS).
 #
 #   ./setup.sh                 # light install: native OCR + reconstruction + faithful
 #   ./setup.sh --with-mineru   # also install MinerU (heavy structural reconstruction)

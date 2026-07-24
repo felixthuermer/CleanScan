@@ -4,7 +4,7 @@ import UserNotifications
 /// Thin wrapper around UserNotifications for the "queue finished" alert.
 ///
 /// UNUserNotificationCenter requires a real bundle identifier, which only exists
-/// when running the assembled DocDigitizer.app (not a bare `swift run`). Every
+/// when running the assembled CleanScan.app (not a bare `swift run`). Every
 /// call is guarded so development runs degrade gracefully instead of crashing.
 enum NotificationManager {
     private static var isAvailable: Bool { Bundle.main.bundleIdentifier != nil }
@@ -18,7 +18,7 @@ enum NotificationManager {
     static func notifyQueueFinished(completed: Int, failed: Int) {
         guard isAvailable else { return }
         let content = UNMutableNotificationContent()
-        content.title = "DocDigitizer"
+        content.title = "CleanScan"
         if failed == 0 {
             content.body = "Finished processing \(completed) document"
                 + (completed == 1 ? "." : "s.")
